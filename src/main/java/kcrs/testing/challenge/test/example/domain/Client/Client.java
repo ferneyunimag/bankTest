@@ -1,11 +1,13 @@
 package kcrs.testing.challenge.test.example.domain.Client;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
 @Getter
 @ToString
+
 public class Client {
 
     private  String name;

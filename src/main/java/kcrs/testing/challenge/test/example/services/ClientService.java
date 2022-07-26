@@ -4,11 +4,12 @@ import kcrs.testing.challenge.test.example.controller.entities.ClientEntity;
 import kcrs.testing.challenge.test.example.domain.Client.Client;
 import kcrs.testing.challenge.test.example.repositories.ClientDAOInterface;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
-public class ClientService {
+@Service
+public class ClientService implements  ClientServiceInterface{
     @Autowired
     ClientDAOInterface clientDAOInterface;
 

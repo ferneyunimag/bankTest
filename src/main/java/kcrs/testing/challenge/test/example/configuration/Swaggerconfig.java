@@ -13,7 +13,7 @@ public class Swaggerconfig {
 
     private static ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("test bankd")
+                .title("test bank")
                 .description("API bank test")
                 .license("Apache 2.0")
                 .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0")
