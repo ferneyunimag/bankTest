@@ -1,4 +1,4 @@
-package kcrs.testing.challenge.test.example.controller.entities;
+package kcrs.testing.challenge.test.example.domain.Client;
 
 import lombok.Data;
 
