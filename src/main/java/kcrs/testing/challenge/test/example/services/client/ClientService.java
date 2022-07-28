@@ -1,11 +1,13 @@
 package kcrs.testing.challenge.test.example.services.client;
 
 import kcrs.testing.challenge.test.example.domain.Client.ClientEntity;
+import kcrs.testing.challenge.test.example.exception.services.NotFoundException;
 import kcrs.testing.challenge.test.example.repositories.ClientDAORepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
+import java.time.Clock;
+import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -38,7 +40,7 @@ public class ClientService implements ClientServiceInterface {
     public void createClient(ClientEntity client) {
         Optional optional = clientDAOInterface.findById(client.getId());
         if (optional.isPresent()) {
-            return;
+          return;
         }
         clientDAOInterface.save(client);
 
